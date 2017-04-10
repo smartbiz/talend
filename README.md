@@ -77,36 +77,44 @@ This part will guide you steps to write your own simple job. To implement the jo
 
 [![Sample Product Job Schema Selection](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-04.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-04.jpg)
 
-<center>![Image 6](../assets/images/TOS-Job-04.jpg "Sample Product Job Schema Selection")</center>
-
 Next, click **Import schema** -> **OK** <br/>
 <center>![Image 7](../assets/images/TOS-Job-06.jpg "Import schema")</center>
 **Step 5**: Select tJavaRow **CheckDefinition**, at the tab **Component**, click **Edit Schema** -> click icon *Copy all of the columns from the input schema to the output schema* -> **OK**. Input the validation code to the **Code** textbox. <br/>
-<center>![Image 8](../assets/images/TOS-Job-05.jpg "Edit schema")</center>
+
+[![Edit schema](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-05.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-05.jpg)
 
 **Edit Schema** -> click icon *Copy all of the columns from the input schema to the output schema* -> **OK**.
-<center>![Image 9](../assets/images/TOS-Job-07.jpg "Copy schema")</center>
+
+[![Copy schema](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-07.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-07.jpg)
 
 **Step 6**: Slect tfilterRow **filterFlag**, at the tab **Component** input the *Condition* to filter at the table **Condition** <br/>
-<center>![Image 10](../assets/images/TOS-Job-08.jpg "Filter component")</center>
+
+[![Filter component](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-08.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-08.jpg)
 
 **Step 7**: Write your code to log invalid data into the code textbox of the **Component**  of the component *LogRejectProduct* and write your code to process valid data into the code textbox of the **Component** tab of component *LogvalidatedProducts*.
-<center>![Image 11](../assets/images/TOS-Job-09.jpg "Code to log result")</center>
+
+[![Code to log result](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-09.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-09.jpg)
+
 Job implementation
 <a id="TOS-Job-04"></a>
 ### Execution and Debug ###
 #### Run ####
 On the tab **Run (Job ProductSampleJob)**, click **Run** to execute the job.
-<center>![Image 12](../assets/images/TOS-Job-11.jpg "Run job")</center>
+
+[![Run job](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-11.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-11.jpg)
+
 #### Debug ####
 Right click on the component that you want to debug, select **Add breakpoint**.
 On the tab ** Run (Job ProductSampleJob)**, select sub-tab **Debug Run**. On the dropbox Debug: <br/>
 
 - Select **Trace Debug** if you want to run Debug in Trace mode. <br/>
-<center>![Image 13](../assets/images/TOS-Job-13.jpg "Trace Debug")</center>
+
+[![Trace Debug](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-13.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-13.jpg)
 
 - Select **Java Debug** if you want to run in Java debug mode. <br/>
-<center>![Image 14](../assets/images/TOS-Job-12.jpg "Java Debug")</center>
+
+[![Java Debug](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-12.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-12.jpg)
+
 <a id="TOC-ESB1"></a>
 # Enterprise Service Bus #
 <a id="TOC-ESB2"></a>
@@ -114,9 +122,12 @@ On the tab ** Run (Job ProductSampleJob)**, select sub-tab **Debug Run**. On the
 <a id="TOC-ESB3"></a>
 ### ActiveMQ Integration ###
 Step 1: Start ActiveMQ server
-<center> ![TOS-ESB-16](../assets/images/TOS-ESB-16.jpg)</br></center>
+
+[![TOS-ESB-16](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-16.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-16.jpg)
+
 Step 2: Run MQMultiReceiver job and MQMultiSender in Talend
-<center> ![TOS-ESB-17](../assets/images/TOS-ESB-17.jpg)</br></center>
+[![TOS-ESB-17](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-17.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-17.jpg)
+
 The result id outputted on the console.
 <center> ![TOS-ESB-18](../assets/images/TOS-ESB-18.jpg)</br></center>
 <a id="TOC-ESB4"></a>
