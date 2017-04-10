@@ -52,7 +52,9 @@ After import successfully, the development view will be displayed as below:
 
 ### Understand Job Data Flow ###
 On the **Repository**, open ProductJob 0.1. The design of ProjectJob 0.1 will be displayed.
-<center>![Image 4](./images/TOS-Job-02.jpg "Design of a Job")</center>
+
+[![Design of a Job](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-02.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-02.jpg)
+
 1. **parseInputCSVfile**: this component parses the input csv file. </br>
 2. **Default value and Validation**: At this component, each csv record will be validated the data definition such as data length, data format, data type.etc... The invalid data will be marked for filtering in the next step. Default value is also assigned to the record at this step.  </br>
 3. **Filter flag**: At this step, the valid data will be transferred to the *Reference check* step. The invalid data will be moved to *Log error* component.<br/>
@@ -67,10 +69,14 @@ This part will guide you steps to write your own simple job. To implement the jo
 **Step 1**: At the **Repository**, Right Click on **Job Design** -> **Create Job**. Input the information for the new Job. Example: *name = ProductSampleJob*. <br/>
 
 **Step 2**: Using the palette to draw the design as the following image. <br/>
-<center>![Image 5](../assets/images/TOS-Job-03.jpg "Job Creation")</center>
+
+[![Job Creation](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-03.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-03.jpg)
 
 **Step 3**: Select the *tFileInputDelimited* on the design, then select the **Component** tab: At the **File name/Stream** combobox, browse to the csv file. Modify **CSV Row Separator**, **File Separator** as in the above image. <br/>
 **Step 4**: Select item **rawData(Main)**, at the tab **Component**, click **Edit Schema**. <br/>
+
+[![Sample Product Job Schema Selection](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-04.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-04.jpg)
+
 <center>![Image 6](../assets/images/TOS-Job-04.jpg "Sample Product Job Schema Selection")</center>
 
 Next, click **Import schema** -> **OK** <br/>
