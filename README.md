@@ -32,7 +32,7 @@ This Developer Guide will introduce you how to use Talend Open Studio for ESB to
 - Extract the downloaded package into your local directory. Ex: *E:\Talend\01.DevTools*
 - Go into folder Studio [Ex: *E:\Talend\01.DevTools\Studio*] and run [TOS_ESB-win-x86_64.exe] in case of Win64bit or [TOS_ESB-win32-x86] in case of Win32bit to start Talend Open Studio for ESB.
 
-<center>![Image 1](../assets/images/TOS-Env-1.jpg "Initial View of Talend Open Studio")</center>
+<center> [![AWS High-Availability](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Env-1.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Env-1.jpg)</center>
 <center>*Initial View of Talend Open Studio for ESB*</center>
 <a id="TOS-Job-01"></a>
 # Data Integration #
