@@ -43,7 +43,8 @@ In this part, we will use Initial Data Load module to introduce how to implement
 Talend Open Studio allow you to develop job to implement Data Integration. The purpose of a job is to parse an input file (ex: csv file, xml file, excel file...), then perform validate the raw data, filter the invalid data and finally send the  valid data to the server. In order to understand the flow clearly, we will analyze the existing project INITIAL\_DATA\_LOAD.
 ### Import existing project ###
 At the initial screen of Talend Open Studio, select option **Import an existing project**, click **Finish** and then browse to the INITIAL\_DATA\_LOAD] project (Please extract [INITIAL\_DATA\_LOAD.zip] in directory ../sources).
-<center>![Image 2](./images/TOS-Env-2.jpg "Import Project View")</center>
+\
+[![Import Project View](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Env-2.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Env-2.jpg)
 
 After import successfully, the development view will be displayed as below:
 <center>![Image 3](./images/TOS-Job-01.jpg "IDE view")</center>
