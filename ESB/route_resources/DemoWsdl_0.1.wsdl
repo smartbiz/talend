@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="RouteResourceDemo"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="RouteResourceDemoOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="RouteResourceDemoOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="RouteResourceDemoOperationRequest">
+		<wsdl:part name="parameters" element="tns:RouteResourceDemoOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="RouteResourceDemoOperationResponse">
+		<wsdl:part name="parameters" element="tns:RouteResourceDemoOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="RouteResourceDemoPortType">
+		<wsdl:operation name="RouteResourceDemoOperation">
+			<wsdl:input message="tns:RouteResourceDemoOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:RouteResourceDemoOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="RouteResourceDemoBinding" type="tns:RouteResourceDemoPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="RouteResourceDemoOperation">
+			<soap:operation soapAction="http://www.talend.org/service/RouteResourceDemoOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="RouteResourceDemo">
+		<wsdl:port name="RouteResourceDemoPort" binding="tns:RouteResourceDemoBinding">
+			<soap:address location="http://localhost:8090/services/RouteResourceDemo" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

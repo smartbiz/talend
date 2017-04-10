@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_-k28QhdwEeGSEs5T83R7_A" WSDLPath="/Users/zubairov/Repositories/tesb-rt-se/examples/rent-a-car/reservationservice/common/src/main/resources/model/reservation-wsdls/ReservationService.wsdl" servicePort="_ApH54BdMEeGp55e7Um-D_w">
+    <additionalInfo xmi:id="_-k28QxdwEeGSEs5T83R7_A" key="UseSAM" value="false"/>
+    <additionalInfo xmi:id="_-k28RBdwEeGSEs5T83R7_A" key="UseSL" value="false"/>
+    <additionalInfo xmi:id="_-k28RRdwEeGSEs5T83R7_A" key="Security.Basic" value="false"/>
+    <additionalInfo xmi:id="_-k28RhdwEeGSEs5T83R7_A" key="Security.SAML" value="false"/>
+  </Services:ServiceConnection>
+  <Services:ServicePort xmi:id="_ApH54BdMEeGp55e7Um-D_w" name="ReservationService" id="_e5H98BBXEeGFz_xdEv1J-Q" serviceOperation="_ApH54RdMEeGp55e7Um-D_w _ApH54hdMEeGp55e7Um-D_w _ApH54xdMEeGp55e7Um-D_w"/>
+  <Services:ServiceOperation xmi:id="_ApH54RdMEeGp55e7Um-D_w" label="getAvailableCars-ReservationService_getAvailableCars" name="getAvailableCars" id="_e5H98RBXEeGFz_xdEv1J-Q" referenceJobId="_iIfc8BBXEeGFz_xdEv1J-Q"/>
+  <Services:ServiceOperation xmi:id="_ApH54hdMEeGp55e7Um-D_w" label="submitCarReservation-ReservationService_submitCarReservation" name="submitCarReservation" id="_e5H98hBXEeGFz_xdEv1J-Q" referenceJobId="_koaSoBBwEeGJovAMsLgpoQ"/>
+  <Services:ServiceOperation xmi:id="_ApH54xdMEeGp55e7Um-D_w" label="getConfirmationOfReservation-ReservationService_getConfirmationOfReservation" name="getConfirmationOfReservation" id="_e5H98xBXEeGFz_xdEv1J-Q" referenceJobId="_KQzQQBBxEeGJovAMsLgpoQ"/>
+</xmi:XMI>

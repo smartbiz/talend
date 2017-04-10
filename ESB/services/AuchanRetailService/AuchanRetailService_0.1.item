@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_ApdxMh3NEeejN_KsNGUqYQ" servicePort="_ApdxMx3NEeejN_KsNGUqYQ"/>
+  <Services:ServicePort xmi:id="_ApdxMx3NEeejN_KsNGUqYQ" name="AuchanRetailServicePortType" id="_ApdxMB3NEeejN_KsNGUqYQ" serviceOperation="_ApdxNB3NEeejN_KsNGUqYQ"/>
+  <Services:ServiceOperation xmi:id="_ApdxNB3NEeejN_KsNGUqYQ" label="AuchanRetailServiceOperation" name="AuchanRetailServiceOperation" id="_ApdxMR3NEeejN_KsNGUqYQ"/>
+</xmi:XMI>

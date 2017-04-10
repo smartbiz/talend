@@ -1,0 +1,1 @@
+200;<?xml version="1.0" encoding="UTF-8"?><customers><customer><id>1</id><firstName>Mike</firstName><city>New-York</city><lastName>Jonson</lastName></customer><customer><id>2</id><firstName>Bob</firstName><city>London</city><lastName>Kert</lastName></customer><customer><id>3</id><firstName>Ilya</firstName><city>Minsk</city><lastName>Melnik</lastName></customer></customers>;

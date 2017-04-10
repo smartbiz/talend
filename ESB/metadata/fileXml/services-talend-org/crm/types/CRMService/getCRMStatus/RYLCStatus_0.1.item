@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_-9skIqzkEeKlNafnRqT25w" name="RYLCStatus" dataPackage="_-9skKazkEeKlNafnRqT25w" XmlFilePath="tempXSDFile7024508880127853304.zip" inputModel="false" fileContent="504B0304140008000800768598420000000000000000000000002200000074656D7058534446696C65323236373839303833313435353433303636342E787364CD565D6FDA30147D9FB4FF10E50710B6BD219884C236218550019DBA47D7B94D3D394E6A5F17BA5F3F3B84104868928A4EE301C9D7E79CFBE17B2F8C772A1A29FA0809717609176A640C13F711311B79DE76BB1D6CBF0C52197B9F87C34FDEDD2258E758770F2E810AE433A3A0064838882867509978F892812AC02363E847F89D543CE47ED5C0DCA894643961AB22EE19907720D89B76863D95146CC9C25F2DD67BF3816135DA9DB80E4194EC5E237C4F65328307A2394E5C2D9E34E1EC8141E43AC0210181970148640C189204544628742CDFD78F1F1CF319DBB72D5C38C2684C5C5F2B4C13903340C2B829B425D4CC1B6374BDCB2A411A33716B6238F04B431B73F52BF0D7485097AE8F963A97A649C661672FCE3DE7E0025BE2153C6910142AF65A1C09134B4AB534AF3E740B55FB7D8827D7310F27E23296CE3ADA04762D2DD3558CB7088DBD86ACF7C64AE95EAF68D3D35FABAE94E1CBBFAA4527A1D8CCCAB16BBB2AEDB92CAAF278FA16FFD76A0E7532427645D527A8879804C0FFADFFFFB0ECEADDAF9835579BFFA472E76D2FC17AA5C852E1DC13751A49633E429B492239E199706D18E132FC7621F926F06A310D3AC37F2C835967F04D30DDCCC3DB4543092B799E54F158AED757C8D90A7FCBF628F645B18BE63D47AD60A711D47F557C636D9F8B424142C4F02665025535027386D8EC8DDE4D1C81A29265B6B2EFDFCC0D39BF47474FFDCDFC67F79E9E870D841E7D5798F2BF59E6F817504B0708DD785E831D020000B00A0000504B0102140014000800080076859842DD785E831D020000B00A000022000000000000000000000000000000000074656D7058534446696C65323236373839303833313435353433303636342E787364504B05060000000001000100500000006D0200000000">
+    <root xmi:id="_-9skI6zkEeKlNafnRqT25w" XMLPath="/crm:RYLCStatus" Attribute="main" Order="1" Type="id_String"/>
+    <root xmi:id="_-9skJKzkEeKlNafnRqT25w" XMLPath="crm" DefaultValue="http://services.talend.org/crm/types" Attribute="ns" Order="2" Type="id_String"/>
+    <root xmi:id="_-9skJazkEeKlNafnRqT25w" XMLPath="/crm:RYLCStatus/code" RelatedColumn="code" Attribute="branch" Order="4" Type="id_String"/>
+    <root xmi:id="_-9skJqzkEeKlNafnRqT25w" XMLPath="/crm:RYLCStatus/creditPoints" RelatedColumn="creditPoints" Attribute="branch" Order="5" Type="id_BigDecimal"/>
+    <root xmi:id="_-9skJ6zkEeKlNafnRqT25w" XMLPath="/crm:RYLCStatus/description" RelatedColumn="description" Attribute="branch" Order="6" Type="id_String"/>
+    <loop xmi:id="_-9skKKzkEeKlNafnRqT25w" XMLPath="/crm:RYLCStatus/customerId" RelatedColumn="customerId" Attribute="branch" Order="3" Type="id_Integer"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-9skKazkEeKlNafnRqT25w" name="default" dataManager="_-9skIqzkEeKlNafnRqT25w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-9skKqzkEeKlNafnRqT25w" id="_-9skIKzkEeKlNafnRqT25w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-9skK6zkEeKlNafnRqT25w" label="customerId" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-9skLKzkEeKlNafnRqT25w" label="code" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-9skLazkEeKlNafnRqT25w" label="creditPoints" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-9skLqzkEeKlNafnRqT25w" label="description" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

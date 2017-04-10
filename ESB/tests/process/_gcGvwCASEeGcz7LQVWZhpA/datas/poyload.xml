@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><tns:DemoServiceOperationRequest xmlns:tns="http://www.talend.org/service/"><in>Hello</in></tns:DemoServiceOperationRequest>
+<?xml version="1.0" encoding="UTF-8"?><tns:DemoServiceOperationRequest xmlns:tns="http://www.talend.org/service/"><in>A1D2c454</in></tns:DemoServiceOperationRequest>
+<?xml version="1.0" encoding="UTF-8"?><tns:DemoServiceOperationRequest xmlns:tns="http://www.talend.org/service/"><in></in></tns:DemoServiceOperationRequest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ESB</name>
+	<comment>
+To have ready-to-use Job Designs at your disposal, import the ESB Demo Project include in Talend Open Studio for ESB.
+
+Simply follow the steps below:
+
+    * Launch Talend Open Studio for ESB
+    * In the login window, click on ESB Demos
+    * Click on Finish to complete the operation
+    * Choose the ESBDEMOS on the &quot;Existing&quot; list
+    * Click on Ok</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.talend.core.talendnature</nature>
+		<nature>com.oaklandsw.transform.runtime.nature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_-mIHlBdwEeGSEs5T83R7_A" WSDLPath="/Users/zubairov/tmp/TESB_SE-V5.0.0RC3/examples/talend/tesb/rent-a-car/crmservice/common/src/main/resources/model/crmservice-wsdls/CRMService.wsdl" servicePort="_1S8r0BdLEeGp55e7Um-D_w">
+    <additionalInfo xmi:id="_-mIHlRdwEeGSEs5T83R7_A" key="UseSAM" value="false"/>
+    <additionalInfo xmi:id="_-mIHlhdwEeGSEs5T83R7_A" key="UseSL" value="false"/>
+    <additionalInfo xmi:id="_-mIHlxdwEeGSEs5T83R7_A" key="Security.Basic" value="false"/>
+    <additionalInfo xmi:id="_-mIHmBdwEeGSEs5T83R7_A" key="Security.SAML" value="false"/>
+  </Services:ServiceConnection>
+  <Services:ServicePort xmi:id="_1S8r0BdLEeGp55e7Um-D_w" name="CRMService" id="_QEc5sA-cEeGrZ8n2806j_A" serviceOperation="_1S8r0RdLEeGp55e7Um-D_w _1S8r0hdLEeGp55e7Um-D_w _1S8r0xdLEeGp55e7Um-D_w"/>
+  <Services:ServiceOperation xmi:id="_1S8r0RdLEeGp55e7Um-D_w" label="getCRMInformation-CRMService_getCRMInformation" name="getCRMInformation" id="_QEc5sQ-cEeGrZ8n2806j_A" referenceJobId="_Y0H_kA-cEeGrZ8n2806j_A"/>
+  <Services:ServiceOperation xmi:id="_1S8r0hdLEeGp55e7Um-D_w" label="getCRMStatus-CRMService_getCRMStatus" name="getCRMStatus" id="_QEc5sg-cEeGrZ8n2806j_A" referenceJobId="_AYuQUBBPEeGFz_xdEv1J-Q"/>
+  <Services:ServiceOperation xmi:id="_1S8r0xdLEeGp55e7Um-D_w" label="updateCRMStatus-CRMService_updateCRMStatus" name="updateCRMStatus" id="_QEdgwA-cEeGrZ8n2806j_A" referenceJobId="_iK1OABBREeGFz_xdEv1J-Q"/>
+</xmi:XMI>

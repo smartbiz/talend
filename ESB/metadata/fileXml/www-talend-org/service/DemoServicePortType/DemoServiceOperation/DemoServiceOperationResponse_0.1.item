@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="__wM_IqzkEeKlNafnRqT25w" name="DemoServiceOperationResponse" dataPackage="__wM_JqzkEeKlNafnRqT25w" XmlFilePath="tempXSDFile775561096996476432.zip" inputModel="false" fileContent="504B0304140008000800798598420000000000000000000000002200000074656D7058534446696C65333133333936303037373133343335393037302E787364BD524B4FC3300CBE23F11FAAFC8066C0AD5A394D9C78488C03D7D07A5DA4C4C96287967F4FFA580543D5C40172B3BF87FD595977541754EDC1AAACB306A9488D52EC997D2165DBB6797B93BBD0C8EBD5EA4ABE3EDC6F07AE98C8E4949FD9A30DE509EAFB83ACA5DAC8BE924709237DF3676500EB814C10DE750533B5179F771799620EFA2D32DCB96037B053D17029221EA2327AA7A1161918B080BC4C60151AE0476581BCAAE0EC8AB79717597AEBFE7E937986495D8A0D58B71D694F1E8262EDF0190E11888FAA595939EB0D742F1F1EBE40334CBD0CAB536C61B0C61423399562D0A69B6023E4A9AF5C301E819F0B8DFD69D26F53937748F0B7B15DE4FFC83D190CBF30959F504B07083730F9520701000039030000504B01021400140008000800798598423730F952070100003903000022000000000000000000000000000000000074656D7058534446696C65333133333936303037373133343335393037302E787364504B0506000000000100010050000000570100000000">
+    <root xmi:id="__wM_I6zkEeKlNafnRqT25w" XMLPath="/tns:DemoServiceOperationResponse" Attribute="main" Order="1" Type="id_String"/>
+    <root xmi:id="__wM_JKzkEeKlNafnRqT25w" XMLPath="tns" DefaultValue="http://www.talend.org/service/" Attribute="ns" Order="2" Type="id_String"/>
+    <loop xmi:id="__wM_JazkEeKlNafnRqT25w" XMLPath="/tns:DemoServiceOperationResponse/out" RelatedColumn="out" Attribute="branch" Order="3" Type="id_String"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="__wM_JqzkEeKlNafnRqT25w" name="default" dataManager="__wM_IqzkEeKlNafnRqT25w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__wM_J6zkEeKlNafnRqT25w" id="__wM_IKzkEeKlNafnRqT25w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__wM_KKzkEeKlNafnRqT25w" label="out" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

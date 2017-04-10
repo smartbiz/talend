@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_q19z8DE3EeWhOIzL8VzPFA" defaultContext="Default">
+  <context xmi:id="_q19z8TE3EeWhOIzL8VzPFA" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_q19z8jE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q19z8zE3EeWhOIzL8VzPFA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_q19z9DE3EeWhOIzL8VzPFA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_q19z9TE3EeWhOIzL8VzPFA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_q19z9jE3EeWhOIzL8VzPFA" field="TEXT" name="PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_q19z9zE3EeWhOIzL8VzPFA" field="TEXT" name="HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_q19z-DE3EeWhOIzL8VzPFA" field="TEXT" name="HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_q19z-TE3EeWhOIzL8VzPFA" field="TEXT" name="ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_q19z-jE3EeWhOIzL8VzPFA" field="TEXT" name="NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_q19z-zE3EeWhOIzL8VzPFA" field="TEXT" name="USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_q19z_DE3EeWhOIzL8VzPFA" field="TEXT" name="GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_q19z_TE3EeWhOIzL8VzPFA" field="TEXT" name="USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_q19z_jE3EeWhOIzL8VzPFA" field="TEXT" name="KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_q19z_zE3EeWhOIzL8VzPFA" field="TEXT" name="KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_q190ADE3EeWhOIzL8VzPFA" field="TEXT" name="ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_q190ATE3EeWhOIzL8VzPFA" field="TEXT" name="NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_q190AjE3EeWhOIzL8VzPFA" field="TEXT" name="JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_q190AzE3EeWhOIzL8VzPFA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="__-FTne-rEeOr84XQJqQxwg" id="_05G7QJhsEeOJhc3M4TuaEw" name="DQTechnical"/>
+    <routinesParameter xmi:id="__-FTnu-rEeOr84XQJqQxwg" id="_011k0JhsEeOJhc3M4TuaEw" name="DataOperation"/>
+    <routinesParameter xmi:id="__-FTn--rEeOr84XQJqQxwg" id="_02batJhsEeOJhc3M4TuaEw" name="DataQuality"/>
+    <routinesParameter xmi:id="__-FToO-rEeOr84XQJqQxwg" id="_049xUJhsEeOJhc3M4TuaEw" name="DqStringHandling"/>
+    <routinesParameter xmi:id="__-FToe-rEeOr84XQJqQxwg" id="_01-uwJhsEeOJhc3M4TuaEw" name="Mathematical"/>
+    <routinesParameter xmi:id="__-FTou-rEeOr84XQJqQxwg" id="_01-uxJhsEeOJhc3M4TuaEw" name="Numeric"/>
+    <routinesParameter xmi:id="__-FTo--rEeOr84XQJqQxwg" id="_01-uyJhsEeOJhc3M4TuaEw" name="Relational"/>
+    <routinesParameter xmi:id="__-FTpO-rEeOr84XQJqQxwg" id="_0zv6IphsEeOJhc3M4TuaEw" name="SQLike"/>
+    <routinesParameter xmi:id="__-FTpe-rEeOr84XQJqQxwg" id="_02IfwJhsEeOJhc3M4TuaEw" name="StringHandling"/>
+    <routinesParameter xmi:id="__-FTpu-rEeOr84XQJqQxwg" id="_02IfxJhsEeOJhc3M4TuaEw" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="__-FTp--rEeOr84XQJqQxwg" id="_02IfyJhsEeOJhc3M4TuaEw" name="TalendDate"/>
+    <routinesParameter xmi:id="__-FTqO-rEeOr84XQJqQxwg" id="_02basJhsEeOJhc3M4TuaEw" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_q190BDE3EeWhOIzL8VzPFA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+    <elementParameter xmi:id="_q190BTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_q190BjE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190BzE3EeWhOIzL8VzPFA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;cxfrs_provider.cLog_1&quot;"/>
+    <elementParameter xmi:id="_q190CDE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_q190CTE3EeWhOIzL8VzPFA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_q190CjE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_q190CzE3EeWhOIzL8VzPFA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_q190DDE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_q190DTE3EeWhOIzL8VzPFA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_q190DjE3EeWhOIzL8VzPFA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_q190DzE3EeWhOIzL8VzPFA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_q190EDE3EeWhOIzL8VzPFA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_q190ETE3EeWhOIzL8VzPFA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190EjE3EeWhOIzL8VzPFA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_q190EzE3EeWhOIzL8VzPFA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190FDE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190FTE3EeWhOIzL8VzPFA" componentName="cCXFRS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="256">
+    <elementParameter xmi:id="_q190FjE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cCXFRS_1" show="false"/>
+    <elementParameter xmi:id="_q190FzE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190GDE3EeWhOIzL8VzPFA" field="TEXT" name="URL" value="&quot;/customers&quot;"/>
+    <elementParameter xmi:id="_q190GTE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL"/>
+    <elementParameter xmi:id="_q190GjE3EeWhOIzL8VzPFA" field="TEXT" name="PATH" value="&quot;/services/customers/&quot;" show="false"/>
+    <elementParameter xmi:id="_q190GzE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="HTTP_METHOD" value="GET" show="false"/>
+    <elementParameter xmi:id="_q190HDE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter xmi:id="_q190HTE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml" show="false"/>
+    <elementParameter xmi:id="_q190HjE3EeWhOIzL8VzPFA" field="TEXT" name="RESPONSE_BEAN" value="" show="false"/>
+    <elementParameter xmi:id="_q190HzE3EeWhOIzL8VzPFA" field="TABLE" name="SCHEMAS">
+      <elementValue xmi:id="_q190IDE3EeWhOIzL8VzPFA" elementRef="SCHEMA" value="getAllCustomers"/>
+      <elementValue xmi:id="_q190ITE3EeWhOIzL8VzPFA" elementRef="HTTP_VERB" value="GET"/>
+      <elementValue xmi:id="_q190IjE3EeWhOIzL8VzPFA" elementRef="URI_PATTERN" value="&quot;/&quot;"/>
+      <elementValue xmi:id="_q190IzE3EeWhOIzL8VzPFA" elementRef="CONSUMES" value="NONE"/>
+      <elementValue xmi:id="_q190JDE3EeWhOIzL8VzPFA" elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue xmi:id="_q190JTE3EeWhOIzL8VzPFA" elementRef="BEAN" value=""/>
+      <elementValue xmi:id="_q190JjE3EeWhOIzL8VzPFA" elementRef="SCHEMA" value="getCustomer"/>
+      <elementValue xmi:id="_q190JzE3EeWhOIzL8VzPFA" elementRef="HTTP_VERB" value="GET"/>
+      <elementValue xmi:id="_q190KDE3EeWhOIzL8VzPFA" elementRef="URI_PATTERN" value="&quot;/{id}&quot;"/>
+      <elementValue xmi:id="_q190KTE3EeWhOIzL8VzPFA" elementRef="CONSUMES" value="NONE"/>
+      <elementValue xmi:id="_q190KjE3EeWhOIzL8VzPFA" elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue xmi:id="_q190KzE3EeWhOIzL8VzPFA" elementRef="BEAN" value=""/>
+      <elementValue xmi:id="_q190LDE3EeWhOIzL8VzPFA" elementRef="SCHEMA" value="addCustomer"/>
+      <elementValue xmi:id="_q190LTE3EeWhOIzL8VzPFA" elementRef="HTTP_VERB" value="POST"/>
+      <elementValue xmi:id="_q190LjE3EeWhOIzL8VzPFA" elementRef="URI_PATTERN" value="&quot;/&quot;"/>
+      <elementValue xmi:id="_q190LzE3EeWhOIzL8VzPFA" elementRef="CONSUMES" value="XML-JSON"/>
+      <elementValue xmi:id="_q190MDE3EeWhOIzL8VzPFA" elementRef="PRODUCES" value="ANY"/>
+      <elementValue xmi:id="_q190MTE3EeWhOIzL8VzPFA" elementRef="BEAN" value="beans.Customer"/>
+      <elementValue xmi:id="_q190MjE3EeWhOIzL8VzPFA" elementRef="SCHEMA" value="updateCustomer"/>
+      <elementValue xmi:id="_q190MzE3EeWhOIzL8VzPFA" elementRef="HTTP_VERB" value="PUT"/>
+      <elementValue xmi:id="_q190NDE3EeWhOIzL8VzPFA" elementRef="URI_PATTERN" value="&quot;/{id}&quot;"/>
+      <elementValue xmi:id="_q190NTE3EeWhOIzL8VzPFA" elementRef="CONSUMES" value="XML-JSON"/>
+      <elementValue xmi:id="_q190NjE3EeWhOIzL8VzPFA" elementRef="PRODUCES" value="ANY"/>
+      <elementValue xmi:id="_q190NzE3EeWhOIzL8VzPFA" elementRef="BEAN" value="beans.Customer"/>
+      <elementValue xmi:id="_q190ODE3EeWhOIzL8VzPFA" elementRef="SCHEMA" value="deleteCustomer"/>
+      <elementValue xmi:id="_q190OTE3EeWhOIzL8VzPFA" elementRef="HTTP_VERB" value="DELETE"/>
+      <elementValue xmi:id="_q190OjE3EeWhOIzL8VzPFA" elementRef="URI_PATTERN" value="&quot;/{id}&quot;"/>
+      <elementValue xmi:id="_q190OzE3EeWhOIzL8VzPFA" elementRef="CONSUMES" value="NONE"/>
+      <elementValue xmi:id="_q190PDE3EeWhOIzL8VzPFA" elementRef="PRODUCES" value="ANY"/>
+      <elementValue xmi:id="_q190PTE3EeWhOIzL8VzPFA" elementRef="BEAN" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_q190PjE3EeWhOIzL8VzPFA" field="TEXT" name="RESOURCE_CLASS" value="beans.DemoRESTRoute" show="false"/>
+    <elementParameter xmi:id="_q190PzE3EeWhOIzL8VzPFA" field="TEXT" name="RESOURCE_OPERATION" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190QDE3EeWhOIzL8VzPFA" field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter xmi:id="_q190QTE3EeWhOIzL8VzPFA" field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter xmi:id="_q190QjE3EeWhOIzL8VzPFA" field="TEXT" name="SERVICE_NAME" value="&quot;cCXFRS&quot;" show="false"/>
+    <elementParameter xmi:id="_q190QzE3EeWhOIzL8VzPFA" field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter xmi:id="_q190RDE3EeWhOIzL8VzPFA" field="CHECK" name="ENABLE_SECURITY" value="false"/>
+    <elementParameter xmi:id="_q190RTE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="SECURITY_TYPE" value="SAML" show="false"/>
+    <elementParameter xmi:id="_q190RjE3EeWhOIzL8VzPFA" field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190RzE3EeWhOIzL8VzPFA" field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_q190SDE3EeWhOIzL8VzPFA" field="CHECK" name="USE_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter xmi:id="_q190STE3EeWhOIzL8VzPFA" field="TEXT" name="ROLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190SjE3EeWhOIzL8VzPFA" field="CHECK" name="ENABLE_CORRELATION" value="false"/>
+    <elementParameter xmi:id="_q190SzE3EeWhOIzL8VzPFA" field="TEXT" name="CORRELATION_VALUE" value="&quot;server&quot;" show="false"/>
+    <elementParameter xmi:id="_q190TDE3EeWhOIzL8VzPFA" field="CHECK" name="LOG_MESSAGES" value="true"/>
+    <elementParameter xmi:id="_q190TTE3EeWhOIzL8VzPFA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_q190TjE3EeWhOIzL8VzPFA" field="TABLE" name="SL_META_DATA" show="false"/>
+    <elementParameter xmi:id="_q190TzE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="DemoREST"/>
+    <elementParameter xmi:id="_q190UDE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190UTE3EeWhOIzL8VzPFA" componentName="cRecipientList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+    <elementParameter xmi:id="_q190UjE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cRecipientList_1" show="false"/>
+    <elementParameter xmi:id="_q190UzE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190VDE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_q190VTE3EeWhOIzL8VzPFA" field="TEXT" name="EXPRESSION" value="&quot;direct:${header.operationName}&quot;"/>
+    <elementParameter xmi:id="_q190VjE3EeWhOIzL8VzPFA" field="CHECK" name="USE_RESULT_CLASS_TYPE" value="false" show="false"/>
+    <elementParameter xmi:id="_q190VzE3EeWhOIzL8VzPFA" field="TEXT" name="RESULT_CLASS_TYPE" value="java.lang.String.class" show="false"/>
+    <elementParameter xmi:id="_q190WDE3EeWhOIzL8VzPFA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_q190WTE3EeWhOIzL8VzPFA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_q190WjE3EeWhOIzL8VzPFA" field="CHECK" name="USE_DELIMITER" value="false"/>
+    <elementParameter xmi:id="_q190WzE3EeWhOIzL8VzPFA" field="TEXT" name="DELIMITER" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_q190XDE3EeWhOIzL8VzPFA" field="CHECK" name="USE_STRATEGY" value="false"/>
+    <elementParameter xmi:id="_q190XTE3EeWhOIzL8VzPFA" field="TEXT" name="STRATEGY_REF" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190XjE3EeWhOIzL8VzPFA" field="CHECK" name="PARELLEL_PROCESS" value="false"/>
+    <elementParameter xmi:id="_q190XzE3EeWhOIzL8VzPFA" field="CHECK" name="USE_EXECUTOR_SERVICE" value="false" show="false"/>
+    <elementParameter xmi:id="_q190YDE3EeWhOIzL8VzPFA" field="TEXT" name="EXECUTOR_SERVICE" value="java.util.concurrent.Executors.newFixedThreadPool(5)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter xmi:id="_q190YTE3EeWhOIzL8VzPFA" field="CHECK" name="STOP_ON_EXCEPTION" value="false"/>
+    <elementParameter xmi:id="_q190YjE3EeWhOIzL8VzPFA" field="CHECK" name="IGNORE_INVALID" value="false"/>
+    <elementParameter xmi:id="_q190YzE3EeWhOIzL8VzPFA" field="CHECK" name="STREAMING" value="false"/>
+    <elementParameter xmi:id="_q190ZDE3EeWhOIzL8VzPFA" field="TEXT" name="TIMEOUT" value=""/>
+    <elementParameter xmi:id="_q190ZTE3EeWhOIzL8VzPFA" field="CHECK" name="USE_ON_PREPARE_PROCESSOR" value="false"/>
+    <elementParameter xmi:id="_q190ZjE3EeWhOIzL8VzPFA" field="TEXT" name="ON_PREPARE_PROCESSOR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190ZzE3EeWhOIzL8VzPFA" field="CHECK" name="SHARE_UNIT_OF_WORK" value="false"/>
+    <elementParameter xmi:id="_q190aDE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190aTE3EeWhOIzL8VzPFA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter xmi:id="_q190ajE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_q190azE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190bDE3EeWhOIzL8VzPFA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_q190bjE3EeWhOIzL8VzPFA" field="TEXT" name="NAME" value="&quot;getAllCustomers&quot;"/>
+    <elementParameter xmi:id="_q190bzE3EeWhOIzL8VzPFA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190cDE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="getAllCustomers"/>
+    <elementParameter xmi:id="_q190cTE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190cjE3EeWhOIzL8VzPFA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+    <elementParameter xmi:id="_q190czE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_q190dDE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190dTE3EeWhOIzL8VzPFA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_q190dzE3EeWhOIzL8VzPFA" field="TEXT" name="NAME" value="&quot;getCustomer&quot;"/>
+    <elementParameter xmi:id="_q190eDE3EeWhOIzL8VzPFA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190eTE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="getCustomer"/>
+    <elementParameter xmi:id="_q190ejE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190ezE3EeWhOIzL8VzPFA" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
+    <elementParameter xmi:id="_q190fDE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_2" show="false"/>
+    <elementParameter xmi:id="_q190fTE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190fjE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_q190fzE3EeWhOIzL8VzPFA" field="TEXT" name="EXPRESSION" value="&quot;${bean:customers.getCustomer}&quot;"/>
+    <elementParameter xmi:id="_q190gDE3EeWhOIzL8VzPFA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_q190gTE3EeWhOIzL8VzPFA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_q190gjE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="getCustomer"/>
+    <elementParameter xmi:id="_q190gzE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190hDE3EeWhOIzL8VzPFA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter xmi:id="_q190hTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_q190hjE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190hzE3EeWhOIzL8VzPFA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;cxfrs_provider.cLog_2&quot;"/>
+    <elementParameter xmi:id="_q190iDE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_q190iTE3EeWhOIzL8VzPFA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_q190ijE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_q190izE3EeWhOIzL8VzPFA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_q190jDE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_q190jTE3EeWhOIzL8VzPFA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_q190jjE3EeWhOIzL8VzPFA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_q190jzE3EeWhOIzL8VzPFA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_q190kDE3EeWhOIzL8VzPFA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_q190kTE3EeWhOIzL8VzPFA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190kjE3EeWhOIzL8VzPFA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_q190kzE3EeWhOIzL8VzPFA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190lDE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190lTE3EeWhOIzL8VzPFA" componentName="cBeanRegister" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="64">
+    <elementParameter xmi:id="_q190ljE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_1" show="false"/>
+    <elementParameter xmi:id="_q190lzE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190mDE3EeWhOIzL8VzPFA" field="TEXT" name="ID" value="&quot;customers&quot;"/>
+    <elementParameter xmi:id="_q190mTE3EeWhOIzL8VzPFA" field="RADIO" name="SIMPLE_CONFIG" value="false"/>
+    <elementParameter xmi:id="_q190mjE3EeWhOIzL8VzPFA" field="RADIO" name="CONFIG_BY_CODE" value="true"/>
+    <elementParameter xmi:id="_q190mzE3EeWhOIzL8VzPFA" field="TEXT" name="CLASS_QUALIFIED_NAME" value="java.lang.Object" show="false"/>
+    <elementParameter xmi:id="_q190nDE3EeWhOIzL8VzPFA" field="CHECK" name="SPECIFY_ARGUMENTS" value="false" show="false"/>
+    <elementParameter xmi:id="_q190nTE3EeWhOIzL8VzPFA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190njE3EeWhOIzL8VzPFA" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_q190nzE3EeWhOIzL8VzPFA" field="LABEL" name="NOTE" value="Note: Provide own codes to specify *beanInstance* variable"/>
+    <elementParameter xmi:id="_q190oDE3EeWhOIzL8VzPFA" field="MEMO_JAVA" name="CODE" value="beans.Customers customers = new beans.Customers();&#xA;&#xA;beans.Customer customer = new beans.Customer();&#xA;customer.setFirstName(TalendDataGenerator.getFirstName());&#xA;customer.setLastName(TalendDataGenerator.getLastName());&#xA;customer.setCity(TalendDataGenerator.getUsCity());&#xA;customers.addCustomer(customer);&#xA;&#xA;customer = new beans.Customer();&#xA;customer.setFirstName(TalendDataGenerator.getFirstName());&#xA;customer.setLastName(TalendDataGenerator.getLastName());&#xA;customer.setCity(TalendDataGenerator.getUsCity());&#xA;customers.addCustomer(customer);&#xA;&#xA;customer = new beans.Customer();&#xA;customer.setFirstName(TalendDataGenerator.getFirstName());&#xA;customer.setLastName(TalendDataGenerator.getLastName());&#xA;customer.setCity(TalendDataGenerator.getUsCity());&#xA;customers.addCustomer(customer);&#xA;&#xA;beanInstance = customers;&#xA;"/>
+    <elementParameter xmi:id="_q190oTE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="customers"/>
+    <elementParameter xmi:id="_q190ojE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190ozE3EeWhOIzL8VzPFA" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter xmi:id="_q190pDE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_1" show="false"/>
+    <elementParameter xmi:id="_q190pTE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190pjE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_q190pzE3EeWhOIzL8VzPFA" field="TEXT" name="EXPRESSION" value="&quot;ref:customers&quot;"/>
+    <elementParameter xmi:id="_q190qDE3EeWhOIzL8VzPFA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_q190qTE3EeWhOIzL8VzPFA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_q190qjE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="getAllCustomers"/>
+    <elementParameter xmi:id="_q190qzE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190rDE3EeWhOIzL8VzPFA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
+    <elementParameter xmi:id="_q190rTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+    <elementParameter xmi:id="_q190rjE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190rzE3EeWhOIzL8VzPFA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_q190sTE3EeWhOIzL8VzPFA" field="TEXT" name="NAME" value="&quot;addCustomer&quot;"/>
+    <elementParameter xmi:id="_q190sjE3EeWhOIzL8VzPFA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190szE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="addCustomer"/>
+    <elementParameter xmi:id="_q190tDE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190tTE3EeWhOIzL8VzPFA" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
+    <elementParameter xmi:id="_q190tjE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_4" show="false"/>
+    <elementParameter xmi:id="_q190tzE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190uDE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_q190uTE3EeWhOIzL8VzPFA" field="TEXT" name="EXPRESSION" value="&quot;${bean:customers.addCustomer}&quot;"/>
+    <elementParameter xmi:id="_q190ujE3EeWhOIzL8VzPFA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_q190uzE3EeWhOIzL8VzPFA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_q190vDE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="addCustomer"/>
+    <elementParameter xmi:id="_q190vTE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190vjE3EeWhOIzL8VzPFA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256">
+    <elementParameter xmi:id="_q190vzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_q190wDE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q190wTE3EeWhOIzL8VzPFA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;DemoRESTRoute.cLog_3&quot;"/>
+    <elementParameter xmi:id="_q190wjE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_q190wzE3EeWhOIzL8VzPFA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_q190xDE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_q190xTE3EeWhOIzL8VzPFA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_q190xjE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_q190xzE3EeWhOIzL8VzPFA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_q190yDE3EeWhOIzL8VzPFA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_q190yTE3EeWhOIzL8VzPFA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_q190yjE3EeWhOIzL8VzPFA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_q190yzE3EeWhOIzL8VzPFA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q190zDE3EeWhOIzL8VzPFA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_q190zTE3EeWhOIzL8VzPFA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q190zjE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q190zzE3EeWhOIzL8VzPFA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
+    <elementParameter xmi:id="_q1900DE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+    <elementParameter xmi:id="_q1900TE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q1900jE3EeWhOIzL8VzPFA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_q1901DE3EeWhOIzL8VzPFA" field="TEXT" name="NAME" value="&quot;updateCustomer&quot;"/>
+    <elementParameter xmi:id="_q1901TE3EeWhOIzL8VzPFA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q1901jE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="updateCustomer"/>
+    <elementParameter xmi:id="_q1901zE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q1902DE3EeWhOIzL8VzPFA" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
+    <elementParameter xmi:id="_q1-bADE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_7" show="false"/>
+    <elementParameter xmi:id="_q1-bATE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q1-bAjE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_q1-bAzE3EeWhOIzL8VzPFA" field="TEXT" name="EXPRESSION" value="&quot;${bean:customers.updateCustomer(body[0], body[1])}&quot;"/>
+    <elementParameter xmi:id="_q1-bBDE3EeWhOIzL8VzPFA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_q1-bBTE3EeWhOIzL8VzPFA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_q1-bBjE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="updateCustomer"/>
+    <elementParameter xmi:id="_q1-bBzE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q1-bCDE3EeWhOIzL8VzPFA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter xmi:id="_q1-bCTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_4" show="false"/>
+    <elementParameter xmi:id="_q1-bCjE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q1-bCzE3EeWhOIzL8VzPFA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;DemoRESTRoute.cLog_4&quot;"/>
+    <elementParameter xmi:id="_q1-bDDE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_q1-bDTE3EeWhOIzL8VzPFA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_q1-bDjE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_q1-bDzE3EeWhOIzL8VzPFA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_q1-bEDE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_q1-bETE3EeWhOIzL8VzPFA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_q1-bEjE3EeWhOIzL8VzPFA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_q1-bEzE3EeWhOIzL8VzPFA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_q1-bFDE3EeWhOIzL8VzPFA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_q1-bFTE3EeWhOIzL8VzPFA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q1-bFjE3EeWhOIzL8VzPFA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_q1-bFzE3EeWhOIzL8VzPFA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q1-bGDE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q1-bGTE3EeWhOIzL8VzPFA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
+    <elementParameter xmi:id="_q1-bGjE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_5" show="false"/>
+    <elementParameter xmi:id="_q1-bGzE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q1-bHDE3EeWhOIzL8VzPFA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_q1-bHjE3EeWhOIzL8VzPFA" field="TEXT" name="NAME" value="&quot;deleteCustomer&quot;"/>
+    <elementParameter xmi:id="_q1-bHzE3EeWhOIzL8VzPFA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q1-bIDE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="deleteCustomer"/>
+    <elementParameter xmi:id="_q1-bITE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q1-bIjE3EeWhOIzL8VzPFA" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
+    <elementParameter xmi:id="_q1-bIzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_9" show="false"/>
+    <elementParameter xmi:id="_q1-bJDE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q1-bJTE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_q1-bJjE3EeWhOIzL8VzPFA" field="TEXT" name="EXPRESSION" value="&quot;${bean:customers.deleteCustomer}&quot;"/>
+    <elementParameter xmi:id="_q1-bJzE3EeWhOIzL8VzPFA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_q1-bKDE3EeWhOIzL8VzPFA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_q1-bKTE3EeWhOIzL8VzPFA" field="TEXT" name="LABEL" value="deleteCustomer"/>
+    <elementParameter xmi:id="_q1-bKjE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_q1-bKzE3EeWhOIzL8VzPFA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="448">
+    <elementParameter xmi:id="_q1-bLDE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_5" show="false"/>
+    <elementParameter xmi:id="_q1-bLTE3EeWhOIzL8VzPFA" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_ESB-20150722_1933-V6.0.1SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_q1-bLjE3EeWhOIzL8VzPFA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;DemoRESTRoute.cLog_5&quot;"/>
+    <elementParameter xmi:id="_q1-bLzE3EeWhOIzL8VzPFA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_q1-bMDE3EeWhOIzL8VzPFA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_q1-bMTE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_q1-bMjE3EeWhOIzL8VzPFA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_q1-bMzE3EeWhOIzL8VzPFA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_q1-bNDE3EeWhOIzL8VzPFA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_q1-bNTE3EeWhOIzL8VzPFA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_q1-bNjE3EeWhOIzL8VzPFA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_q1-bNzE3EeWhOIzL8VzPFA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_q1-bODE3EeWhOIzL8VzPFA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_q1-bOTE3EeWhOIzL8VzPFA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_q1-bOjE3EeWhOIzL8VzPFA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_q1-bOzE3EeWhOIzL8VzPFA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_q1-bPDE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cCXFRS_1" offsetLabelX="0" offsetLabelY="0" source="cCXFRS_1" target="cRecipientList_1">
+    <elementParameter xmi:id="_q1-bPTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bPjE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cDirect_1" offsetLabelX="0" offsetLabelY="0" source="cDirect_1" target="cSetBody_1">
+    <elementParameter xmi:id="_q1-bPzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bQDE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route4" lineStyle="14" metaname="cDirect_2" offsetLabelX="0" offsetLabelY="0" source="cDirect_2" target="cSetBody_2">
+    <elementParameter xmi:id="_q1-bQTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bQjE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route5" lineStyle="14" metaname="cSetBody_2" offsetLabelX="0" offsetLabelY="0" source="cSetBody_2" target="cLog_2">
+    <elementParameter xmi:id="_q1-bQzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bRDE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route3" lineStyle="14" metaname="cSetBody_1" offsetLabelX="0" offsetLabelY="0" source="cSetBody_1" target="cLog_1">
+    <elementParameter xmi:id="_q1-bRTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bRjE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route6" lineStyle="14" metaname="cDirect_3" offsetLabelX="0" offsetLabelY="0" source="cDirect_3" target="cSetBody_4">
+    <elementParameter xmi:id="_q1-bRzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route6" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bSDE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route7" lineStyle="14" metaname="cSetBody_4" offsetLabelX="0" offsetLabelY="0" source="cSetBody_4" target="cLog_3">
+    <elementParameter xmi:id="_q1-bSTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route7" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bSjE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route8" lineStyle="14" metaname="cDirect_4" offsetLabelX="0" offsetLabelY="0" source="cDirect_4" target="cSetBody_7">
+    <elementParameter xmi:id="_q1-bSzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route8" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bTDE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route9" lineStyle="14" metaname="cSetBody_7" offsetLabelX="0" offsetLabelY="0" source="cSetBody_7" target="cLog_4">
+    <elementParameter xmi:id="_q1-bTTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route9" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bTjE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route10" lineStyle="14" metaname="cDirect_5" offsetLabelX="0" offsetLabelY="0" source="cDirect_5" target="cSetBody_9">
+    <elementParameter xmi:id="_q1-bTzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route10" show="false"/>
+  </connection>
+  <connection xmi:id="_q1-bUDE3EeWhOIzL8VzPFA" connectorName="ROUTE" label="route11" lineStyle="14" metaname="cSetBody_9" offsetLabelX="0" offsetLabelY="0" source="cSetBody_9" target="cLog_5">
+    <elementParameter xmi:id="_q1-bUTE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="route11" show="false"/>
+  </connection>
+  <subjob xmi:id="_q1-bUjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bUzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_q1-bVDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bVTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bVjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bVzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cCXFRS_1" show="false"/>
+    <elementParameter xmi:id="_q1-bWDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bWTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bWjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bWzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cRecipientList_1" show="false"/>
+    <elementParameter xmi:id="_q1-bXDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bXTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bXjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bXzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_q1-bYDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bYTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bYjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bYzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_q1-bZDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bZTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bZjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bZzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_2" show="false"/>
+    <elementParameter xmi:id="_q1-baDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-baTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bajE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bazE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_q1-bbDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bbTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bbjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bbzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_1" show="false"/>
+    <elementParameter xmi:id="_q1-bcDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bcTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bcjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bczE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_1" show="false"/>
+    <elementParameter xmi:id="_q1-bdDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bdTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bdjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bdzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+    <elementParameter xmi:id="_q1-beDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-beTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bejE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bezE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_4" show="false"/>
+    <elementParameter xmi:id="_q1-bfDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bfTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bfjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bfzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_q1-bgDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bgTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bgjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bgzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+    <elementParameter xmi:id="_q1-bhDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bhTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bhjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bhzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_7" show="false"/>
+    <elementParameter xmi:id="_q1-biDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-biTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bijE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bizE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_4" show="false"/>
+    <elementParameter xmi:id="_q1-bjDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bjTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bjjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bjzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cDirect_5" show="false"/>
+    <elementParameter xmi:id="_q1-bkDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bkTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bkjE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-bkzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cSetBody_9" show="false"/>
+    <elementParameter xmi:id="_q1-blDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-blTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_q1-bljE3EeWhOIzL8VzPFA">
+    <elementParameter xmi:id="_q1-blzE3EeWhOIzL8VzPFA" field="TEXT" name="UNIQUE_NAME" value="cLog_5" show="false"/>
+    <elementParameter xmi:id="_q1-bmDE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_q1-bmTE3EeWhOIzL8VzPFA" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>
