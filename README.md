@@ -123,10 +123,10 @@ On the tab ** Run (Job ProductSampleJob)**, select sub-tab **Debug Run**. On the
 ### ActiveMQ Integration ###
 Step 1: Start ActiveMQ server
 
-[![TOS-ESB-16](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-16.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-16.jpg)
+[![TOS-ESB-16](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-16.JPG)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-16.JPG)
 
 Step 2: Run MQMultiReceiver job and MQMultiSender in Talend
-[![TOS-ESB-17](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-17.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-17.jpg)
+[![TOS-ESB-17](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-17.JPG)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-17.JPG)
 
 The result id outputted on the console.
 <center> ![TOS-ESB-18](../assets/images/TOS-ESB-18.jpg)</br></center>
