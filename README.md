@@ -42,13 +42,13 @@ In this part, we will use Initial Data Load module to introduce how to implement
 Talend Open Studio allow you to develop job to implement Data Integration. The purpose of a job is to parse an input file (ex: csv file, xml file, excel file...), then perform validate the raw data, filter the invalid data and finally send the  valid data to the server. In order to understand the flow clearly, we will analyze the existing project INITIAL\_DATA\_LOAD.
 ### Import existing project ###
 At the initial screen of Talend Open Studio, select option **Import an existing project**, click **Finish** and then browse to the INITIAL\_DATA\_LOAD] project (Please extract [INITIAL\_DATA\_LOAD.zip] in directory ../sources).
-<center>![Image 2](../assets/images/TOS-Env-2.jpg "Import Project View")</center>
+<center>![Image 2](./images/TOS-Env-2.jpg "Import Project View")</center>
 
 After import successfully, the development view will be displayed as below:
-<center>![Image 3](../assets/images/TOS-Job-01.jpg "IDE view")</center>
+<center>![Image 3](./images/TOS-Job-01.jpg "IDE view")</center>
 ### Understand Job Data Flow ###
 On the **Repository**, open ProductJob 0.1. The design of ProjectJob 0.1 will be displayed.
-<center>![Image 4](../assets/images/TOS-Job-02.jpg "Design of a Job")</center>
+<center>![Image 4](./images/TOS-Job-02.jpg "Design of a Job")</center>
 1. **parseInputCSVfile**: this component parses the input csv file. </br>
 2. **Default value and Validation**: At this component, each csv record will be validated the data definition such as data length, data format, data type.etc... The invalid data will be marked for filtering in the next step. Default value is also assigned to the record at this step.  </br>
 3. **Filter flag**: At this step, the valid data will be transferred to the *Reference check* step. The invalid data will be moved to *Log error* component.<br/>
