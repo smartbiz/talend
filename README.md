@@ -200,7 +200,7 @@ Test case 3: type http://localhost:8090/services/customers/2 in Advanced REST cl
 <a id="TOC-ESB8"></a>
 ### How to deploy service using ESBRuntime Container ###
 We are ready to deploy Talend ESB RESTful Service DemoREST-0.1 job to Talend Runtime environment for that we must build job from studio as OSGI Bundle for ESB
-[![TOS-ESB-2](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-2.JPG)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-2.JPG)
+[![TOS-ESB-2](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-2.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-2.jpg)
 Select archive file path, Build type as OSGI Bundle For ESB and click Finish
 
 [![TOS-ESB-3](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-3.JPG)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-ESB-3.JPG)
