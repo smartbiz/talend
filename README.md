@@ -47,7 +47,9 @@ At the initial screen of Talend Open Studio, select option **Import an existing 
 [![Import Project View](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Env-2.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Env-2.jpg)
 
 After import successfully, the development view will be displayed as below:
-<center>![Image 3](./images/TOS-Job-01.jpg "IDE view")</center>
+
+[![IDE view](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-01.jpg)](https://github.com/smartbiz/talend/blob/master/assets/images/TOS-Job-01.jpg)
+
 ### Understand Job Data Flow ###
 On the **Repository**, open ProductJob 0.1. The design of ProjectJob 0.1 will be displayed.
 <center>![Image 4](./images/TOS-Job-02.jpg "Design of a Job")</center>
