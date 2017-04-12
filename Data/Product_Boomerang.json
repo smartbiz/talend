@@ -1,0 +1,103 @@
+{
+  "_appName": "Boomerang",
+  "_appVersion": "3.1.0",
+  "_timestamp": 1491969460119,
+  "projectName": "",
+  "projects": [
+    {
+      "name": "DemoREST",
+      "last_accessed": 1491969339127,
+      "id": 10,
+      "_services": [
+        {
+          "projectId": 10,
+          "name": "Product",
+          "isRest": true,
+          "endpoints": [],
+          "id": 11,
+          "soap": null,
+          "_operations": [
+            {
+              "name": "__SYSTEM__",
+              "position": 0,
+              "serviceId": 11,
+              "id": 13,
+              "_requests": [
+                {
+                  "operationId": 13,
+                  "name": "TC01",
+                  "endpoint": "http://localhost:8040/services/product",
+                  "method": "GET",
+                  "payload": {
+                    "mode": "json",
+                    "raw": ""
+                  },
+                  "auth": {},
+                  "response": {
+                    "time": 433,
+                    "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<products><Product id=\"1\"><name>Avocado</name><origin>1</origin><price/><stock/><OriginName>Vietnam</OriginName></Product><Product id=\"2\"><name>Apple</name><origin>2</origin><price>100 VND/1kg</price><stock>1000</stock><OriginName>China</OriginName></Product><Product id=\"3\"><name>Orange</name><origin>2</origin><price>30 VND/1kg</price><stock>1000</stock><OriginName>France</OriginName></Product><Product id=\"4\"><name>Banana</name><origin>2</origin><price>60 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"5\"><name>Grape</name><origin>2</origin><price>45 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"6\"><name>Grapefruit</name><origin>2</origin><price>32 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"7\"><name>Mango</name><origin>3</origin><price>15 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"8\"><name>Pineapple</name><origin>1</origin><price>60 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"9\"><name>Mangosteen</name><origin>1</origin><price>23 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"10\"><name>Mandarin</name><origin>1</origin><price>9 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"11\"><name>Kiwi fruit</name><origin>1</origin><price>120 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"12\"><name>Kumquat</name><origin>1</origin><price>72 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"13\"><name>Jackfruit</name><origin>1</origin><price>95 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"14\"><name>Durian</name><origin>3</origin><price>40 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"15\"><name>Lemon</name><origin>3</origin><price>38 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"16\"><name>Lime </name><origin>2</origin><price>62 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"17\"><name>Papaya</name><origin>1</origin><price>30 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"18\"><name>Soursop</name><origin>1</origin><price>77 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"19\"><name>Custard-apple</name><origin>3</origin><price>79 VND/1kg</price><stock>1000</stock><OriginName/></Product><Product id=\"20\"><name>Plum</name><origin>1</origin><price>50 VND/1kg</price><stock>1000</stock><OriginName/></Product></products>",
+                    "status": {
+                      "code": 200,
+                      "text": "OK"
+                    },
+                    "headers": "Date: Wed, 12 Apr 2017 03:56:54 GMT\r\nServer: Jetty(9.2.19.v20160908)\r\nTransfer-Encoding: chunked\r\nContent-Type: application/xml\r\n",
+                    "contentType": "application/xml"
+                  },
+                  "headers": [
+                    {
+                      "name": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "name": "",
+                      "value": ""
+                    }
+                  ],
+                  "position": 1,
+                  "id": 14,
+                  "_state": null,
+                  "show": true
+                },
+                {
+                  "operationId": 13,
+                  "name": "TC02",
+                  "endpoint": "http://localhost:8040/services/product/origin/1",
+                  "method": "GET",
+                  "payload": {
+                    "mode": "json",
+                    "raw": ""
+                  },
+                  "auth": {},
+                  "response": {
+                    "time": 37,
+                    "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<products><product id=\"1\"><name>Avocado</name><price/><stock/><OriginName>Vietnam</OriginName></product><product id=\"8\"><name>Pineapple</name><price>60 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"9\"><name>Mangosteen</name><price>23 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"10\"><name>Mandarin</name><price>9 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"11\"><name>Kiwi fruit</name><price>120 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"12\"><name>Kumquat</name><price>72 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"13\"><name>Jackfruit</name><price>95 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"17\"><name>Papaya</name><price>30 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"18\"><name>Soursop</name><price>77 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product><product id=\"20\"><name>Plum</name><price>50 VND/1kg</price><stock>1000</stock><OriginName>Vietnam</OriginName></product></products>",
+                    "status": {
+                      "code": 200,
+                      "text": "OK"
+                    },
+                    "headers": "Date: Wed, 12 Apr 2017 03:57:27 GMT\r\nServer: Jetty(9.2.19.v20160908)\r\nTransfer-Encoding: chunked\r\nContent-Type: application/xml\r\n",
+                    "contentType": "application/xml"
+                  },
+                  "headers": [
+                    {
+                      "name": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "name": "",
+                      "value": ""
+                    }
+                  ],
+                  "position": 2,
+                  "id": 15,
+                  "_state": null,
+                  "show": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "_appName": "Boomerang",
+  "_appVersion": "3.1.0",
+  "_timestamp": 1491969261404,
+  "projectName": "",
+  "projects": [
+    {
+      "name": "AuchanSOAPDemo",
+      "last_accessed": 1491961384069,
+      "id": 6,
+      "_services": [
+        {
+          "projectId": 6,
+          "name": "DemoSOAP",
+          "url": "http://localhost:8090/services/ProductService?wsdl",
+          "isRest": false,
+          "namespaces": {
+            "http://www.w3.org/2000/xmlns/": {
+              "prefix": "w3",
+              "key": "xmlns:w3",
+              "value": "http://www.w3.org/2000/xmlns/"
+            },
+            "http://schemas.xmlsoap.org/soap/envelope/": {
+              "prefix": "x",
+              "key": "xmlns:x",
+              "value": "http://schemas.xmlsoap.org/soap/envelope/"
+            },
+            "http://www.talend.org/service/": {
+              "prefix": "ser",
+              "key": "xmlns:ser",
+              "value": "http://www.talend.org/service/",
+              "isElementQualified": true
+            }
+          },
+          "endpoints": [
+            "http://localhost:8090/services/ProductService"
+          ],
+          "wsdl": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><wsdl:definitions xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\" xmlns:tns=\"http://www.talend.org/service/\" xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\" name=\"ProductService\" targetNamespace=\"http://www.talend.org/service/\">\n  <wsdl:types>\n<xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\" xmlns:tns=\"http://www.talend.org/service/\" xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\" targetNamespace=\"http://www.talend.org/service/\">\n\t\t\t\n  <xsd:element name=\"getProductsRequest\">\n\t\t\t\t\n    <xsd:complexType>\n\t\t\t\t\t\n      <xsd:sequence>\n\t\t\t\t\t\t\n        <xsd:element name=\"in\" type=\"xsd:string\"/>\n\t\t\t\t\t\n      </xsd:sequence>\n\t\t\t\t\n    </xsd:complexType>\n\t\t\t\n  </xsd:element>\n\t\t\t\n  <xsd:element name=\"getProductsResponse\">\n\t\t\t\t\n    <xsd:complexType>\n\t\t\t\t\t\n      <xsd:sequence>\n\t\t\t\t\t\t\n        <xsd:element name=\"out\" type=\"xsd:string\"/>\n\t\t\t\t\t\n      </xsd:sequence>\n\t\t\t\t\n    </xsd:complexType>\n\t\t\t\n  </xsd:element>\n\t\t\t\n  <xsd:element name=\"ProductRequest\" type=\"tns:ProductRequest\">\n\t\t\t</xsd:element>\n\t\t\t\n  <xsd:element name=\"ProductResponse\" type=\"tns:ProductRestponse\">\n\t\t\t</xsd:element>\n\t\t\t\n\t\t\t\n            \n  <xsd:complexType name=\"id\"/>\n        \n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n            \n  <xsd:complexType name=\"ProductRequest\">\n            \t\n    <xsd:sequence>\n            \t\t\n      <xsd:element name=\"id\" type=\"xsd:int\"/>\n            \t\n    </xsd:sequence>\n            \n  </xsd:complexType>\n\t\t\n            \n  <xsd:complexType name=\"ProductRestponse\">\n            \t\n    <xsd:sequence>\n            \t\t\n      <xsd:element name=\"id\" type=\"xsd:int\"/>\n            \t\t\n      <xsd:element minOccurs=\"0\" name=\"name\" type=\"xsd:string\"/>\n            \t\t\n      <xsd:element name=\"originId\" type=\"xsd:int\"/>\n            \t\t\n      <xsd:element minOccurs=\"0\" name=\"price\" type=\"xsd:string\"/>\n            \t\t\n      <xsd:element name=\"stock\" type=\"xsd:int\"/>\n            \t\n    </xsd:sequence>\n            \n  </xsd:complexType>\n\t\t\n</xsd:schema>\n  </wsdl:types>\n  <wsdl:message name=\"getProductsRequest\">\n    <wsdl:part element=\"tns:ProductRequest\" name=\"body\">\n    </wsdl:part>\n  </wsdl:message>\n  <wsdl:message name=\"getProductsResponse\">\n    <wsdl:part element=\"tns:ProductResponse\" name=\"body\">\n    </wsdl:part>\n  </wsdl:message>\n  <wsdl:portType name=\"ProductService\">\n    <wsdl:operation name=\"getProducts\">\n      <wsdl:input message=\"tns:getProductsRequest\">\n    </wsdl:input>\n      <wsdl:output message=\"tns:getProductsResponse\">\n    </wsdl:output>\n    </wsdl:operation>\n  </wsdl:portType>\n  <wsdl:binding name=\"ProductServiceBinding\" type=\"tns:ProductService\">\n    <soap:binding style=\"document\" transport=\"http://schemas.xmlsoap.org/soap/http\"/>\n    <wsdl:operation name=\"getProducts\">\n      <soap:operation soapAction=\"http://www.talend.org/service/getProducts\"/>\n      <wsdl:input>\n        <soap:body use=\"literal\"/>\n      </wsdl:input>\n      <wsdl:output>\n        <soap:body use=\"literal\"/>\n      </wsdl:output>\n    </wsdl:operation>\n  </wsdl:binding>\n  <wsdl:service name=\"ProductService\">\n    <wsdl:port binding=\"tns:ProductServiceBinding\" name=\"ProductServicePort\">\n      <soap:address location=\"http://localhost:8090/services/ProductService\"/>\n    </wsdl:port>\n  </wsdl:service>\n</wsdl:definitions>",
+          "auth": {},
+          "id": 10,
+          "soap": null,
+          "_operations": [
+            {
+              "name": "getProducts",
+              "action": "http://www.talend.org/service/getProducts",
+              "position": 0,
+              "serviceId": 10,
+              "id": 12,
+              "_requests": [
+                {
+                  "operationId": 12,
+                  "name": "TC01",
+                  "endpoint": "http://localhost:8090/services/ProductService",
+                  "method": "POST",
+                  "payload": {
+                    "mode": "xml",
+                    "raw": "<x:Envelope xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://www.talend.org/service/\">\n    <x:Header/>\n    <x:Body>\n        <ser:ProductRequest>\n            <ser:id>2</ser:id>\n        </ser:ProductRequest>\n    </x:Body>\n</x:Envelope>"
+                  },
+                  "auth": {
+                    "basic": {
+                      "type": "httpBasic"
+                    }
+                  },
+                  "response": {
+                    "time": 55,
+                    "data": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><ProductResponse xmlns:tns=\"http://www.talend.org/service/\"><id>2</id><name>Apple</name><originId>2</originId><price>100 VND/1kg</price><stock>1000</stock></ProductResponse></soap:Body></soap:Envelope>",
+                    "status": {
+                      "code": 200,
+                      "text": "OK"
+                    },
+                    "headers": "Content-Length: 282\r\nServer: Jetty(8.1.14.v20131031)\r\nContent-Type: text/xml;charset=UTF-8\r\n",
+                    "contentType": "text/xml;charset=UTF-8"
+                  },
+                  "headers": [
+                    {
+                      "name": "Content-Type",
+                      "value": "text/xml; charset=utf-8"
+                    },
+                    {
+                      "name": "SOAPAction",
+                      "value": "http://www.talend.org/service/getProducts"
+                    },
+                    {
+                      "name": "",
+                      "value": ""
+                    }
+                  ],
+                  "position": 1,
+                  "id": 13,
+                  "_state": null,
+                  "show": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
