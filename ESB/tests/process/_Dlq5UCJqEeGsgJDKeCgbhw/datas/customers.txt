@@ -1,3 +1,0 @@
-Mike;Jonson;New-York;1
-Bob;Kert;London;2
-Ilya;Melnik;Minsk;3
