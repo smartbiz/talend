@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ProductService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="getProductsRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getProductsResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ProductRequest"
+				type="tns:ProductRequest">
+			</xsd:element>
+			<xsd:element name="ProductResponse"
+				type="tns:ProductRestponse">
+			</xsd:element>
+			
+			
+            <xsd:complexType name="id"></xsd:complexType>
+        
+		
+		
+		
+		
+		
+            <xsd:complexType name="ProductRequest">
+            	<xsd:sequence>
+            		<xsd:element name="id" type="xsd:int"></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+		
+            <xsd:complexType name="ProductRestponse">
+            	<xsd:sequence>
+            		<xsd:element name="id" type="xsd:int"></xsd:element>
+            		<xsd:element name="name" type="xsd:string" minOccurs="0"></xsd:element>
+            		<xsd:element name="originId" type="xsd:int"></xsd:element>
+            		<xsd:element name="price" type="xsd:string" minOccurs="0"></xsd:element>
+            		<xsd:element name="stock" type="xsd:int"></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="getProductsRequest">
+		<wsdl:part name="body" element="tns:ProductRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getProductsResponse">
+		<wsdl:part name="body" element="tns:ProductResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="ProductService">
+		<wsdl:operation name="getProducts">
+			<wsdl:input message="tns:getProductsRequest"></wsdl:input>
+			<wsdl:output message="tns:getProductsResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="ProductServiceBinding"
+		type="tns:ProductService">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getProducts">
+			<soap:operation
+				soapAction="http://www.talend.org/service/getProducts" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="ProductService">
+		<wsdl:port name="ProductServicePort" binding="tns:ProductServiceBinding">
+			<soap:address location="http://localhost:8090/services/ProductService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,9 @@
+Organization,Search key,Name,Description,UPC/EAN ,Product category ,UOM,Product type ,Production,BillofMaterial,Discontinued,CostType,AttributeSet,AttributeSetValue,Stocked,Purchase,Sale,Tax category ,Standard cost ,Price - Sales ,Price - Purchase 
+Auchan,rma,Raw material A,Raw material for purchase,3344567,Raw material,Bg,Item,FALSE,FALSE,FALSE,Average,,,TRUE,TRUE,FALSE,IVA 4%,,,2.5
+Auchan,rmb,Raw material B,Raw material for purchase,3344534,Raw material,Bg,Item,FALSE,FALSE,FALSE,Average,,,TRUE,TRUE,FALSE,IVA 4%,,,3.5
+TranscosmosTranscosmosTranscosmosTranscosmosTranscosmosTranscosmosTranscosmosTranscosmosTranscosmosTranscosmos,rmc,Raw material C,Raw material for purchase,3344523,Raw material,Bg,Item,FALSE,FALSE,FALSE,Average,,,TRUE,TRUE,FALSE,IVA 4%,,,4.5
+Auchan,fga,Final good A,Final goods for selling,3344567,Final goods,Kg,Item,FALSE,FALSE,FALSE,Average,Color,Yellow,TRUE,FALSE,TRUE,IVA 16%,,15.5,
+Auchan,fgb,Final good B,Final goods for selling,3344567,Final goods,Kg,Item,FALSE,FALSE,FALSE,Average,Color,Green,TRUE,FALSE,TRUE,IVA 16%,,16.5,
+Auchan,fgc,Final good C,Final goods for selling,3344567,Final goods,Kg,Item,FALSE,FALSE,FALSE,Average,Color,Yellow,TRUE,FALSE,TRUE,IVA 16%,,17.5,
+Auchan,sva,Service A,Consultant service A class,3344567,Services,Hour,Service,FALSE,FALSE,FALSE,Standard,,,FALSE,FALSE,TRUE,IVA 16%,,52.5,
+Auchan,,Service B,Consultant service B class,3344567,Services,Hour,Service,FALSE,FALSE,FALSE,Standard,,,FALSE,FALSE,TRUE,IVA 16%,,58.5,
